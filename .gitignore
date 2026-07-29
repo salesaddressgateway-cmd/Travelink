@@ -1,0 +1,3 @@
+# Ignore temporary portable git binaries
+mingit/
+*.zip

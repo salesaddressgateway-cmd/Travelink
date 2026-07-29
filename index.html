@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travelink by Akshay — Where Journeys Connect | Qatar & Global Travel Network</title>
+  <meta name="description" content="Official travel platform and creator network by Akshay. Explore Qatar tourism, desert safaris, dhow cruises, budget travel tips, and cultural events.">
+  <meta name="keywords" content="Travelink, Akshay Travel, Qatar Tourism, Qatar Events, Doha Travel Tips, Desert Safari Qatar, Dhow Cruise, Budget Travel Qatar">
+  <meta name="author" content="Akshay - Travelink">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:title" content="Travelink by Akshay — Where Journeys Connect">
+  <meta property="og:description" content="Discover Qatar tourism, cultural festivals, budget tips, and join the global travel network.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Core Stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. HEADER & NAVBAR
+       ========================================================================== -->
+  <header class="header" id="mainHeader">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo (Top Left) -->
+      <a href="#home" class="brand-logo-wrap" style="display: flex; align-items: center; gap: 10px;">
+        <img src="assets/images/travelink_logo.svg" alt="Travelink Logo" class="brand-logo-img" id="headerLogoImg" style="height: 48px; width: auto; max-width: 210px; background: transparent; padding: 0; border-radius: 0; box-shadow: none;">
+      </a>
+
+      <!-- Navigation Links -->
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#tips" class="nav-link">Travel Tips</a></li>
+        <li><a href="#events" class="nav-link">Qatar Events</a></li>
+        <li><a href="#activities" class="nav-link">Activities</a></li>
+        <li><a href="#contact" class="nav-link">Connect</a></li>
+      </ul>
+
+      <!-- Action CTAs & Customizer Toggle -->
+      <div class="nav-actions">
+        <button class="media-customizer-btn" id="customizerToggleBtn" title="Upload custom logo or profile image">
+          <i class="fa-solid fa-sliders"></i> <span>Upload Logo</span>
+        </button>
+        <a href="#contact" class="btn btn-primary">Connect With Me</a>
+        <button class="mobile-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Live Logo & Photo Customizer Drawer -->
+  <aside class="customizer-drawer" id="customizerDrawer">
+    <div class="customizer-header">
+      <h4 class="customizer-title"><i class="fa-solid fa-images" style="color: var(--primary-coral);"></i> Media Manager</h4>
+      <button class="modal-close-btn" id="closeCustomizerBtn" style="position: static; width:28px; height:28px; font-size: 0.9rem;">&times;</button>
+    </div>
+    <p style="font-size: 0.825rem; color: var(--text-muted); margin-bottom: 16px;">
+      Akshay, you can upload your official <code>travelink_logo_final.svg</code> and profile photo below. They will immediately render live on the website!
+    </p>
+
+    <!-- Upload Logo -->
+    <div class="upload-group">
+      <label class="upload-label"><i class="fa-solid fa-bookmark" style="color: var(--primary-coral);"></i> Upload Brand Logo (SVG/PNG)</label>
+      <label class="file-dropzone" for="logoFileInput">
+        <i class="fa-solid fa-cloud-arrow-up" style="font-size: 1.5rem; color: var(--primary-orange); margin-bottom: 4px;"></i>
+        <span style="font-size: 0.85rem; display: block;">Click to select travelink_logo_final.svg</span>
+        <input type="file" id="logoFileInput" accept="image/*,.svg">
+      </label>
+    </div>
+
+    <!-- Upload Profile Photo -->
+    <div class="upload-group">
+      <label class="upload-label"><i class="fa-solid fa-user-gear" style="color: var(--primary-coral);"></i> Upload Profile Photo</label>
+      <label class="file-dropzone" for="profileFileInput">
+        <i class="fa-solid fa-camera-retro" style="font-size: 1.5rem; color: var(--primary-orange); margin-bottom: 4px;"></i>
+        <span style="font-size: 0.85rem; display: block;">Click to browse profile portrait</span>
+        <input type="file" id="profileFileInput" accept="image/*">
+      </label>
+    </div>
+
+    <button id="resetMediaBtn" class="btn btn-outline" style="width: 100%; padding: 8px; font-size: 0.8rem; border-color: rgba(61,43,31,0.2);">
+      Reset to Default Media
+    </button>
+  </aside>
+
+  <!-- ==========================================================================
+       2. HOME HERO SECTION
+       ========================================================================== -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      
+      <div class="hero-text-col">
+        <div class="hero-badge">
+          <i class="fa-solid fa-compass spin-slow"></i> Travel Content Creator & Community Builder
+        </div>
+        <h1 class="hero-title">
+          Where Journeys <span>Connect</span>
+        </h1>
+        <p class="hero-intro">
+          Hi, I’m <strong>Akshay</strong>. Welcome to Travelink — your premier gateway to Qatar’s mesmerizing landscapes, rich heritage, and authentic travel experiences. Together, we build a global network of passionate travelers.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Connect With Me
+          </a>
+          <a href="#tips" class="btn btn-outline" style="color: #FFFFFF; border-color: #FFFFFF;">
+            <i class="fa-solid fa-book-open"></i> Explore Travel Tips
+          </a>
+        </div>
+      </div>
+
+      <!-- Akshay Profile Card -->
+      <div class="hero-profile-col">
+        <div class="profile-hero-card">
+          <div class="profile-avatar-wrap">
+            <img src="assets/images/akshay_profile.jpg" alt="Akshay - Travel Creator" class="profile-avatar-img">
+            <span class="profile-status-badge">
+              <i class="fa-solid fa-circle" style="font-size: 8px;"></i> In Qatar
+            </span>
+          </div>
+          <h2 class="profile-name">Akshay</h2>
+          <p class="profile-role">Founder, Travelink Network</p>
+          <div class="profile-socials">
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon-btn" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon-btn" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="https://wa.me/97471713955" target="_blank" class="social-icon-btn" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Stats Strip -->
+  <div class="container stats-strip">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <div class="stat-number">28+</div>
+        <div class="stat-label">Countries Explored</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">45K+</div>
+        <div class="stat-label">Community Members</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">120+</div>
+        <div class="stat-label">Qatar Guides Published</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-number">15</div>
+        <div class="stat-label">Global Network Hubs</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       3. ABOUT PAGE / SECTION
+       ========================================================================== -->
+  <section class="section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        
+        <div class="about-img-frame">
+          <img src="assets/images/akshay_profile.jpg" alt="Akshay Travel Content Creator" class="about-profile-img">
+          <div class="about-experience-badge">
+            <div class="about-experience-num">Travelink</div>
+            <div class="about-experience-text">Connecting Globetrotters</div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <span class="section-tag"><i class="fa-solid fa-user"></i> About Akshay</span>
+          <h2 class="section-title">Bridging Cultures Through <span>Personal Storytelling</span></h2>
+          <p>
+            Welcome to Travelink! I'm <strong>Akshay</strong>, a travel content creator based in Qatar with deep roots in India. My mission is simple: to transform how travelers experience destination culture by providing honest guides, practical tips, and a connected global network.
+          </p>
+          <p>
+            From dune bashing across Khor Al Adaid's inland sea to capturing the ambient night life of Souq Waqif, I curate immersive itineraries that help you travel smarter, deeper, and more meaningfully.
+          </p>
+          
+          <ul class="about-features-list">
+            <li class="about-feature-item"><i class="fa-solid fa-circle-check"></i> Authentic Qatar Insights</li>
+            <li class="about-feature-item"><i class="fa-solid fa-circle-check"></i> Budget-Friendly Tips</li>
+            <li class="about-feature-item"><i class="fa-solid fa-circle-check"></i> Global Traveler Network</li>
+            <li class="about-feature-item"><i class="fa-solid fa-circle-check"></i> Personalized Creator Advice</li>
+          </ul>
+
+          <div style="margin-top: 30px;">
+            <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-handshake"></i> Join The Network</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. TRAVEL INFORMATION & TIPS SECTION
+       ========================================================================== -->
+  <section class="section-padding" id="tips" style="background: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fa-solid fa-lightbulb"></i> Travel Guides</span>
+        <h2 class="section-title">Travel Information & <span>Expert Tips</span></h2>
+        <p class="section-subtitle">
+          Curated advice to help you pack efficiently, travel on budget, understand local culture, and make the most of your Qatar adventures.
+        </p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs" id="tipsFilterTabs">
+        <button class="filter-btn active" data-filter="All">All Tips</button>
+        <button class="filter-btn" data-filter="Packing Tips">Packing Tips</button>
+        <button class="filter-btn" data-filter="Budget Travel">Budget Travel</button>
+        <button class="filter-btn" data-filter="Visa & Documentation">Visa & Documentation</button>
+        <button class="filter-btn" data-filter="Local Culture">Local Culture</button>
+        <button class="filter-btn" data-filter="Travel Hacks">Travel Hacks</button>
+      </div>
+
+      <!-- Dynamic Grid -->
+      <div class="tips-grid" id="tipsGrid">
+        <!-- Rendered via js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. QATAR TOURISM & EVENTS
+       ========================================================================== -->
+  <section class="section-padding" id="events">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fa-solid fa-calendar-star"></i> Qatar Happenings</span>
+        <h2 class="section-title">Qatar Tourism & <span>Featured Events</span></h2>
+        <p class="section-subtitle">
+          Stay updated with Qatar’s premier festivals, cultural celebrations, dune rallies, and waterfront spectacles.
+        </p>
+      </div>
+
+      <!-- Event Category Filters -->
+      <div class="filter-tabs" id="eventsFilterTabs">
+        <button class="filter-btn active" data-filter="All">All Events</button>
+        <button class="filter-btn" data-filter="Cultural Events">Cultural Events</button>
+        <button class="filter-btn" data-filter="Desert Activities">Desert Activities</button>
+        <button class="filter-btn" data-filter="City Tours">City Tours</button>
+        <button class="filter-btn" data-filter="Family Activities">Family Activities</button>
+        <button class="filter-btn" data-filter="Seasonal Festivals">Seasonal Festivals</button>
+      </div>
+
+      <!-- Events Grid -->
+      <div class="events-grid" id="eventsGrid">
+        <!-- Rendered via js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. ACTIVITIES & EXPERIENCES GALLERY
+       ========================================================================== -->
+  <section class="section-padding" id="activities" style="background: var(--bg-surface-elevated);">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fa-solid fa-mountain-sun"></i> Qatar Experiences</span>
+        <h2 class="section-title">Unforgettable <span>Qatar Activities</span></h2>
+        <p class="section-subtitle">
+          Click any experience to open our immersive full-screen gallery view and explore what makes Qatar unique.
+        </p>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid" id="activitiesGrid">
+        <!-- Rendered via js/app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. CONTACT & CONNECT PAGE
+       ========================================================================== -->
+  <section class="section-padding contact-section" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Let's Connect</span>
+        <h2 class="section-title">Connect With <span>Akshay</span></h2>
+        <p class="section-subtitle">
+          Have questions about traveling to Qatar, creator collaborations, or joining the Travelink Network? Get in touch directly!
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        
+        <!-- Contact Info -->
+        <div class="contact-info-card">
+          <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Direct Contact Details</h3>
+          
+          <!-- Qatar Phone -->
+          <div class="contact-phone-box">
+            <div class="phone-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="phone-details">
+              <label>🇶🇦 Qatar Helpline / WhatsApp</label>
+              <a href="tel:+97471713955">+974 71713955</a>
+            </div>
+          </div>
+
+          <!-- India Phone -->
+          <div class="contact-phone-box">
+            <div class="phone-icon" style="background: linear-gradient(135deg, #F4A261, #E76F51);"><i class="fa-solid fa-mobile-screen-button"></i></div>
+            <div class="phone-details">
+              <label>🇮🇳 India Contact Number</label>
+              <a href="tel:+918848582223">+91 8848582223</a>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="contact-phone-box">
+            <div class="phone-icon" style="background: linear-gradient(135deg, #E9C46A, #F4A261);"><i class="fa-solid fa-envelope"></i></div>
+            <div class="phone-details">
+              <label>Official Email</label>
+              <a href="mailto:connect@travelink.me">connect@travelink.me</a>
+            </div>
+          </div>
+
+          <!-- Location -->
+          <div style="margin-top: 30px;">
+            <h4 style="font-size: 1rem; margin-bottom: 12px;"><i class="fa-solid fa-location-dot" style="color: var(--primary-coral);"></i> Main Hub Locations</h4>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Doha, State of Qatar &bull; Kerala, India
+            </p>
+          </div>
+
+          <!-- Socials -->
+          <div style="margin-top: 24px;">
+            <h4 style="font-size: 1rem; margin-bottom: 12px;">Follow Akshay On Socials</h4>
+            <div class="profile-socials" style="justify-content: flex-start;">
+              <a href="https://instagram.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://youtube.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://tiktok.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="https://wa.me/97471713955" target="_blank" class="social-icon-btn"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="travelinkContactForm">
+          <h3 style="font-size: 1.5rem; margin-bottom: 20px;">Send Me A Message</h3>
+          
+          <div class="form-group">
+            <label class="form-label" for="contactName">Your Full Name *</label>
+            <input type="text" id="contactName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactEmail">Email Address *</label>
+            <input type="email" id="contactEmail" class="form-control" placeholder="sarah@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactSubject">Subject</label>
+            <input type="text" id="contactSubject" class="form-control" placeholder="e.g. Qatar Tour Inquiry / Collaboration">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="contactMessage">Your Message *</label>
+            <textarea id="contactMessage" class="form-control" placeholder="Tell me about your travel plans or questions..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fa-solid fa-paper-plane"></i> Send Message To Akshay
+          </button>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. NEWSLETTER & FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      
+      <!-- Newsletter Banner -->
+      <div class="newsletter-banner">
+        <div class="newsletter-text">
+          <h3>Join the Travelink Network</h3>
+          <p>Get exclusive Qatar event invites, secret travel tips, and creator updates delivered to your inbox.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" id="newsletterEmail" class="newsletter-input" placeholder="Enter your email..." required>
+          <button type="submit" class="btn btn-primary" style="background: var(--text-dark); color: #FFFFFF !important;">
+            Subscribe
+          </button>
+        </form>
+      </div>
+
+      <!-- Main Footer Grid -->
+      <div class="footer-grid">
+        
+        <!-- Col 1: Brand Info -->
+        <div>
+          <a href="#home" class="brand-logo-wrap" style="margin-bottom: 16px; display: inline-block;">
+            <img src="assets/images/travelink_logo.svg" alt="Travelink Footer Logo" class="brand-logo-img footer-logo-img" style="height: 44px; width: auto; background: transparent; padding: 0; border-radius: 0; box-shadow: none;">
+          </a>
+          <p style="font-size: 0.9rem; color: rgba(255,255,255,0.7); line-height: 1.6; margin-bottom: 20px;">
+            Personal travel content brand by Akshay. Connecting travelers across Qatar and globally with authentic tips and community experiences.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div>
+          <h4 class="footer-col">Quick Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Akshay</a></li>
+            <li><a href="#tips">Travel Tips</a></li>
+            <li><a href="#events">Qatar Tourism Events</a></li>
+            <li><a href="#activities">Activities & Gallery</a></li>
+            <li><a href="#contact">Contact & Connect</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Categories -->
+        <div>
+          <h4 class="footer-col">Travel Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#tips">Desert Safari Guides</a></li>
+            <li><a href="#tips">Doha Metro & Transport</a></li>
+            <li><a href="#tips">Qatar Visa & Hayya Portal</a></li>
+            <li><a href="#tips">Souq Waqif & Culture</a></li>
+            <li><a href="#events">Seasonal Festivals</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Info -->
+        <div>
+          <h4 class="footer-col">Direct Contact</h4>
+          <p style="font-size: 0.9rem; margin-bottom: 10px;">
+            <i class="fa-solid fa-phone" style="color: var(--primary-gold);"></i> 🇶🇦 <strong>+974 71713955</strong>
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 10px;">
+            <i class="fa-solid fa-mobile-screen-button" style="color: var(--primary-gold);"></i> 🇮🇳 <strong>+91 8848582223</strong>
+          </p>
+          <p style="font-size: 0.9rem; margin-bottom: 16px;">
+            <i class="fa-solid fa-envelope" style="color: var(--primary-gold);"></i> connect@travelink.me
+          </p>
+          <div class="profile-socials" style="justify-content: flex-start;">
+            <a href="https://instagram.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://youtube.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://tiktok.com" target="_blank" class="social-icon-btn"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="copyright-bar">
+        <span>© 2026 Travelink by Akshay. All rights reserved.</span>
+        <span>Designed for Adventurers & Community Builders</span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Dynamic Modal Backdrop -->
+  <div class="modal-backdrop" id="globalModalBackdrop">
+    <div class="modal-box">
+      <button class="modal-close-btn" id="modalCloseBtn">&times;</button>
+      <div id="modalDynamicContent"></div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/data.js"></script>
+  <script src="js/uploader.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
